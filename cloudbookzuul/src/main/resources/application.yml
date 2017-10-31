@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+zuul:
+  prefix: /api
+  routes:
+    bookstore:
+      path: /bookservice/**
+      serviceId: cloudbook-bookstore
+    users:
+      path: /userservice/**
+      serviceId: cloudbook-users
+    borrow:
+      path: /borrowservice/**
+      serviceId: cloudbook-borrow
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+  instance:
+    preferIpAddress: true

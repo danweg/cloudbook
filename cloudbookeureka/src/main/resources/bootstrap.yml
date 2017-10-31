@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cloudbook-eureka
+  cloud:
+    config:
+      enabled: false
