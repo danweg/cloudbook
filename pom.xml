@@ -9,6 +9,7 @@
         <module>cloudbookzuul</module>
         <module>cloudbookuser</module>
         <module>cloudbookborrow</module>
+        <module>cloudbookconfig</module>
     </modules>
 
     <parent>

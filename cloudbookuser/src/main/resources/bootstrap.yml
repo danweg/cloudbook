@@ -1,3 +1,14 @@
 spring:
   application:
     name: cloudbook-users
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: cloudbook-config
+      profile: default, test, xyz
+
+management:
+  security:
+    enabled: false

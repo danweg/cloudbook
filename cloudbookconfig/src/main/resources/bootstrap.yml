@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cloudbook-config
+  cloud:
+    config:
+      enabled: false
